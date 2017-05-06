@@ -6,12 +6,16 @@ namespace Dealership
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("\nDemo GetVehicles Stored Proc");
+
             var service = new VehicleService();
             var list = service.GetVehicles();
             foreach (var item in list)
             {
-                // do stuff
+                Console.WriteLine(item);
             }
+
+            Console.ReadLine();
         }
     }
 }

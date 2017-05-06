@@ -10,5 +10,10 @@ namespace Dealership
         public string Make { get; set; }
         public string Model { get; set; }
         public DateTime Year { get; set; }
+
+        public override string ToString()
+        {
+            return $"VehicleId: {VehicleId}, Make: {Make}, Model: {Model}, Year: {Year},";
+        }
     }
 }
